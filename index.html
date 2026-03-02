@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tejasvi Kadam | DevOps & Cloud Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);color:white;overflow-x:hidden;}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;position:fixed;width:100%;backdrop-filter:blur(10px);background:rgba(0,0,0,0.3);z-index:1000;}
+header h1{font-size:20px;font-weight:600;}
+nav a{color:white;text-decoration:none;margin-left:25px;transition:0.3s;}
+nav a:hover{color:#00f7ff;}
+
+.hero{height:100vh;display:flex;align-items:center;justify-content:space-between;padding:0 8%;position:relative;}
+.hero-content{max-width:600px;animation:fadeIn 2s ease forwards;}
+.hero-content h2{font-size:48px;margin-bottom:10px;}
+
+.profile-img{
+width:280px;
+height:320px;
+border-radius:20px; /* Regular Rounded Shape */
+overflow:hidden;
+border:4px solid rgba(255,255,255,0.3);
+box-shadow:0 0 30px rgba(0,247,255,0.4);
+animation:float 4s ease-in-out infinite;
+}
+.profile-img img{width:100%;height:100%;object-fit:cover;}
+
+@keyframes float{0%{transform:translateY(0);}50%{transform:translateY(-12px);}100%{transform:translateY(0);}}
+
+.typewrite > .wrap{border-right:0.08em solid #00f7ff;}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:10px 10px 0 0;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+background:linear-gradient(45deg,#00f7ff,#0055ff);
+color:black;
+box-shadow:0 4px 15px rgba(0,247,255,0.5);
+}
+.btn:hover{transform:scale(1.05);background:linear-gradient(45deg,#0055ff,#00f7ff);}
+
+section{padding:100px 8%;}
+.section-title{text-align:center;font-size:35px;margin-bottom:50px;}
+
+.glass-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+
+.card{
+padding:25px;
+border-radius:15px;
+backdrop-filter:blur(15px);
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);
+opacity:0;
+transform:translateY(25px);
+transition:0.6s;
+}
+.card.visible{opacity:1;transform:translateY(0);}
+
+footer{text-align:center;padding:20px;background:rgba(0,0,0,0.4);}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+/* Mobile Fix */
+@media(max-width:768px){
+.hero{flex-direction:column;text-align:center;margin-top:100px;}
+.profile-img{margin-top:40px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Tejasvi Kadam</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h2>Hi, I’m Tejasvi kadam</h2>
+
+<h3>
+<span class="typewrite" data-period="2000"
+data-type='["DevOps Engineer","AWS Cloud Engineer","CI/CD Automation"]'>
+<span class="wrap"></span>
+</span>
+</h3>
+
+<p>Building scalable cloud infrastructure and automated CI/CD pipelines using modern DevOps practices.</p>
+
+<a href="tejasvi_kadam_1.pdf" download class="btn">Download Resume</a>
+<a href="https://www.linkedin.com/in/tejasvi-kadam-521549289" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+<a href="https://github.com/tk4924232-dotcom" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+</div>
+
+<div class="profile-img">
+<img src="profile2.jpeg" alt="Tejasvi Kadam">
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+
+<div class="card visible">
+<ul style="line-height:1.8; padding-left:20px;">
+
+<li>Cloud & DevOps Engineer based in Pune, Maharashtra</li>
+
+<li>Hands-on experience with AWS services including EC2, S3, RDS, IAM, VPC, CloudWatch, Route53, Lambda and CloudFormation</li>
+
+<li>Skilled in CI/CD pipeline implementation using Jenkins, GitHub and Docker</li>
+
+<li>Strong knowledge of containerization and orchestration using Docker and Kubernetes</li>
+
+<li>Experience in Infrastructure as Code using Terraform</li>
+
+<li>Built and deployed static websites on AWS with CloudFront CDN and custom domain setup</li>
+
+<li>Developed serverless applications using AWS Lambda and API Gateway</li>
+
+<li>Good understanding of networking concepts including DNS, Load Balancing, NAT and Security Groups</li>
+
+<li>Comfortable working in Linux environment with command-line operations and shell basics</li>
+
+<li>Passionate about automation, cloud security and continuous learning in DevOps ecosystem</li>
+
+</ul>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Technical Skills</h2>
+<div class="glass-grid">
+<div class="card visible">AWS (EC2, S3, IAM, VPC, CloudWatch)</div>
+<div class="card visible">Docker & Kubernetes</div>
+<div class="card visible">CI/CD with Jenkins & GitHub</div>
+<div class="card visible">Terraform (Infrastructure as Code)</div>
+<div class="card visible">Linux & Bash Scripting</div>
+<div class="card visible">Node.js Deployment Automation</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+<div class="glass-grid">
+
+<div class="card">
+<h3>Static Website Hosting on AWS</h3>
+<ul style="line-height:1.8; padding-left:18px;">
+<li>Deployed static portfolio website using Amazon S3 with public access configuration</li>
+<li>Integrated CloudFront CDN to improve global content delivery performance</li>
+<li>Configured custom domain using Route 53 with proper DNS records</li>
+<li>Implemented secure bucket policies and optimized storage permissions</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>CI/CD Pipeline for Cloud Application</h3>
+<ul style="line-height:1.8; padding-left:18px;">
+<li>Designed and implemented automated CI/CD pipeline using GitHub and Jenkins</li>
+<li>Dockerized Node.js application for consistent deployment environments</li>
+<li>Automated build, test and deployment process on AWS EC2</li>
+<li>Reduced manual deployment effort and improved release efficiency</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Serverless Web Application</h3>
+<ul style="line-height:1.8; padding-left:18px;">
+<li>Developed serverless backend using AWS Lambda and API Gateway</li>
+<li>Integrated DynamoDB for scalable and managed database solution</li>
+<li>Eliminated server management overhead using event-driven architecture</li>
+<li>Implemented IAM roles for secure service-to-service communication</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>GitLab to GitHub Repository Mirroring</h3>
+<ul style="line-height:1.8; padding-left:18px;">
+<li>Configured repository mirroring between GitLab and GitHub</li>
+<li>Maintained synchronized branches, commits and version history</li>
+<li>Improved cross-platform collaboration and backup reliability</li>
+<li>Followed best practices for version control and branching strategy</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="card visible" style="text-align:center;">
+📧 tejasvikadam51@gmail.com <br><br>
+📞 +91 9373948482 <br><br>
+🌐 linkedin.com/in/tejasvi-kadam-521549289 <br><br>
+💻 github.com/tk4924232-dotcom
+</div>
+</section>
+
+<footer>© 2026 Tejasvi Kadam | DevOps & Cloud Engineer</footer>
+
+<script>
+var TxtType = function(el, toRotate, period) {
+this.toRotate = toRotate; this.el = el; this.loopNum = 0;
+this.period = parseInt(period, 10) || 2000; this.txt = ''; this.tick(); this.isDeleting = false;
+};
+TxtType.prototype.tick = function() {
+var i = this.loopNum % this.toRotate.length;
+var fullTxt = this.toRotate[i];
+this.txt = this.isDeleting ? fullTxt.substring(0, this.txt.length - 1) : fullTxt.substring(0, this.txt.length + 1);
+this.el.innerHTML = '<span>'+this.txt+'</span>';
+var that = this; var delta = 150 - Math.random() * 100;
+if (this.isDeleting) { delta /= 2; }
+if (!this.isDeleting && this.txt === fullTxt) { delta = this.period; this.isDeleting = true; }
+else if (this.isDeleting && this.txt === '') { this.isDeleting = false; this.loopNum++; delta = 500; }
+setTimeout(function() { that.tick(); }, delta);
+};
+window.onload = function() {
+var elements = document.getElementsByClassName('typewrite');
+for (var i=0; i<elements.length; i++) {
+var toRotate = elements[i].getAttribute('data-type');
+var period = elements[i].getAttribute('data-period');
+if (toRotate) { new TxtType(elements[i], JSON.parse(toRotate), period); }
+}
+};
+
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if(entry.isIntersecting) entry.target.classList.add('visible');
+});
+}, {threshold: 0.2});
+cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
